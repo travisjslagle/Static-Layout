@@ -1,0 +1,420 @@
+body {
+    background-color: #f5f6f7;
+    box-sizing: inherit;
+    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav p{
+    text-align: right;
+    padding: 20px;
+}
+
+.header{
+    text-align: center;
+    background-image: url(https://www.hulu.com/static/hitch/s3/attachments/ckbvd0gyz00xg19mlsu9nayv7-homepage-masthead-test-desktop-3200x1320-v4c-6-16-20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    display: block;
+    color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 36px;
+}
+
+.header h3{
+    color: #32d192;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.header h4{
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: -5px;
+}
+
+.freeTrialButton{
+    background-color: white;
+    font-size: 14px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5px;
+    font-weight: 550;
+    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+}
+
+.freeTrialButton:hover{
+    opacity: 0.8;
+}
+
+#freeTrialFinePrint {
+    font: 400 10px Times;
+}
+
+#introText{
+    margin-bottom: -35px;
+}
+
+.header h5{
+    font-size: 16px;
+}
+
+.logo{
+    height: auto;
+    width: 40%;
+    margin: -45px;
+    margin-bottom: -70px;
+    transform: scale(0.5, 0.5);
+    position: relative;
+    left: 32%;
+}
+.bundleOfferBanner{
+    background-image: linear-gradient(to right, #0a2026, #1c555c);
+    display: flex;
+    max-height: 180px;
+    min-height: 140px;
+}
+
+#huluDisneyEspnPic{
+    flex: 2;
+}
+
+#hDEPicContainer img{
+    max-width: 75%;
+    vertical-align: middle;
+} 
+
+#huluDisneyEspnPic img{
+    transform: scale(0.9, 0.9);
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+#bundleOfferText{
+    flex: 3;
+    color: white;
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 1%;
+}
+
+#bundleAndSave {
+    color: #32d192;
+}
+
+#huluDisneyEspnText {
+    font-size: 24px;
+    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+    margin: -4px;
+}
+
+a:visited{
+    color: lightgray;
+}
+
+#moreDetails {
+    color: white;  
+}
+
+#bundleButton{
+    flex: 1;
+}
+
+#getBundleButton{
+    text-align: right;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 0px 20px;
+    color: #fff;
+    height: 46px;
+    font: 400 14px Arial;
+    vertical-align: center;
+    position: relative;
+    left: 15%;
+    top: 30%;
+    border-radius: 3px;
+}
+
+.titlesGrid {
+    display: flex;
+}
+
+.titlesGridChild img{
+    align-content: center;
+    justify-content: space-between;
+    max-width: 75%;
+    margin-left: 12.5%;
+}
+
+.planSelection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #1e1e1e;
+}
+
+.planSelection h1{
+    font-weight: lighter;
+    font-size: 48px;
+}
+
+.planSelection h2{
+    font: lighter 22px Arial;
+    margin-top: -8px;
+    margin-bottom: 100px;
+}
+
+.planContainer {
+    position: relative;
+    left: 11%;
+    width: 78%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+
+#aSB, #aSP {
+    background: linear-gradient(90deg, #05aaa3 0%, #72de93 56.73%, #92ed8d);
+    height: 3px;
+    width: 0%; 
+    /* border: 1px solid red; */
+    position: relative;
+    /* margin-top: -12px;
+    margin-left: -12px; */
+    transition: width 0.3s ease-in-out;
+}
+
+/*
+ANIMATION TIME!!
+*/
+
+.animatedPlan {
+    flex-basis: 45%;
+    max-width: 550px;
+    box-shadow: 0 2px 10px 0 rgba(134,141,155,0.2);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* height: auto; */
+    color: #4C5260;
+    list-style-type: none;
+    font-weight: 200;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.animatedPlan:hover{
+    transform: translateY(-50px);
+    box-shadow: #1e1e1e;
+}
+.basicPlan:hover > #aSB{
+    width: 100%;
+}
+
+.premiumPlan:hover > #aSP{
+    width: 100%;
+}
+
+#basicPlanTop, #premPlanTop {
+    width: 95.5%;
+    border-bottom: 1px solid lightslategray;
+    padding: 12px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+}
+#basicPlanTop h4, #premPlanTop h4{
+    font-weight: bold;
+    font: arial;
+}
+
+#basicPlanTop h3, #premPlanTop h3{
+    font-weight: 100;
+    font-size: 26px;
+}
+
+.selectPlanButton{
+    color: #fff;
+    background: #040505;
+    width: 64%;
+    margin: 15px;
+    padding: 22px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    border-radius: 4px;
+}
+
+.selectPlanButton:hover {
+    opacity: 0.8;
+}
+
+#basicPlanMiddle, #premPlanMiddle {
+    width: 100%;
+    padding: 12px;
+}
+
+#basicPlanMiddle ul, #premPlanMiddle ul{
+    list-style-type: none;
+    font: 500 16px Arial;
+    padding-right: 20px;
+    line-height: 1.5;
+
+}
+
+#basicPlanMiddle li, #premPlanMiddle li{
+    padding: 12px 0px;
+    text-align: left;
+}
+
+#basicPlanMiddle span, #premPlanMiddle span {
+    display: inline-block;
+    background-image: url(https://www.hulu.com/static/hitch/static/icons/icon_green_check.svg);
+    height: 18px;
+    width: 18px;
+    margin-right: 16px;
+}
+
+#basicPlanBottom, #premPlanBottom {
+    justify-content: flex-end;
+}
+
+.seeAddOns {
+    color: #656B7B;
+    margin-top: 22px;
+}
+
+.seeAddOns p{
+    text-decoration: none;
+}
+
+.pageFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.sitemapRow {
+    display: flex;
+    padding: 0 50px 0 50px;
+}
+
+.sitemapCol {
+    justify-content: space-around;
+    flex-basis: 17%;
+    color: #656B7B;
+}
+
+.sitemapCol ul{
+    list-style-type: none;
+    line-height: 2.3;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.blankUL{
+    color: #f5f6f7;
+}
+
+.sitemapListHeader{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+#planSelectionFooter{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.pSFBotRow{
+    display: flex;
+    background-color: #fff;
+    margin-top: 140px;
+    max-width: 100%;
+    max-height: 325px;
+    margin-bottom: 30px;
+}
+
+.pSFootText{
+    flex: 3;
+    padding-left: 130px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding-top: 45px;
+    line-height: 0.3;
+}
+
+.pSFootImgCont{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.pSFootImg img{
+    left: 50px;
+    top: -200px;
+    max-width: 65%;
+    padding-right: 45px;
+    margin-bottom: -7px;
+}
+
+#footerFreeTrial{
+    color: #fff;
+    background: #040505;
+    /* width: 64%; */
+    margin: 15px;
+    padding: 22px 30px 22px 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    border-radius: 4px;
+}
+
+#footerFreeTrial:hover{
+    opacity: 0.8;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 65px 0px 65px;
+    padding-top: 25px;
+    border-top: 2px solid #DCDFE6;
+}
+
+.footerLinks img{
+    margin: 15px;
+}
+
+.copyrightRow{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #656B7B;
+    padding-left: 10px;
+    padding-right: 80px;
+    margin-top: 18px;
+    margin-top: 20px;
+}
+
+.copyrightRow a{
+    color: #656B7B;
+    text-decoration: none;
+}
